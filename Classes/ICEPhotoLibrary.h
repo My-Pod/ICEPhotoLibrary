@@ -12,7 +12,6 @@
 #import <Photos/Photos.h>
 
 
-NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 相册访问权限状态
@@ -60,8 +59,8 @@ typedef void (^CreatNewGroupBlock) ();
  *  @param success   获取成功的回调
  *  @param falied    获取失败的回调
  */
-+ (void)getImage:(nonnull NSString *)imageURL
-         options:(nullable PHImageRequestOptions *)options
++ (void)getImage:(NSString *)imageURL
+         options:(PHImageRequestOptions *)options
    withImageSize:(CGSize)imageSize
          success:(void (^) (UIImage *image))success
          faliure:(void (^) ())falied;
@@ -73,7 +72,7 @@ typedef void (^CreatNewGroupBlock) ();
  *  @param success  获取成功的回调
  *  @param falied   获取失败的回调
  */
-+ (void)getImage:(nonnull NSString *)imageURL
++ (void)getImage:(NSString *)imageURL
          success:(void (^) (UIImage *image))success
          faliure:(void (^) ())falied;
 
@@ -85,7 +84,7 @@ typedef void (^CreatNewGroupBlock) ();
  *  @param success   成功的回调
  *  @param falied    失败的回调
  */
-+ (void)saveImage:(nonnull UIImage *)image
++ (void)saveImage:(UIImage *)image
           toAlbum:(NSString *)albumName
           success:(void (^) (NSString *imageURL))success
           failure:(void (^) (NSString *errMsg))falied;
@@ -97,7 +96,7 @@ typedef void (^CreatNewGroupBlock) ();
  *  @param albumName 新相册名
  *  @param reslut    创建结果
  */
-+ (void)creatNewAssetsGroupAlbunWithName:(nonnull NSString *)albumName
++ (void)creatNewAssetsGroupAlbunWithName:(NSString *)albumName
                                  success:(void (^) (id PhotoAlubm))success
                                     fail:(void (^) (NSString *errMsg))fail;
 
@@ -117,10 +116,9 @@ typedef void (^CreatNewGroupBlock) ();
  *  @param success   获取成功则返回相册  (ios 8 之前 photoAlubm是 ALAssetsGroup iOS 8 之后是 )
  *  @param fail      获取失败无返回
  */
-+ (void)getPhotoAlbum:(nonnull NSString *)albumName
++ (void)getPhotoAlbum:( NSString *)albumName
               success:(void (^) (id PhotoAlubm))success
                  fail:(void (^) (NSString *errMsg))fail;
 @end
 
 
-NS_ASSUME_NONNULL_END
