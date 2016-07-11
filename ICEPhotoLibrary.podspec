@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'ICEPhotoLibrary'
-s.version          = '1.0.0'
+s.version          = '1.0.1'
 s.summary          = '封装图片的存取功能'
 s.description      = <<-DESC
 TODO: 封装图片的存取功能,兼容iOS 7 (ALAsset) 和 iOS 8 (PHPhotoLibrary).
