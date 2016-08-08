@@ -78,14 +78,18 @@
             options.deliveryMode = PHImageRequestOptionsDeliveryModeFastFormat;
         }
         
-        
+        __block BOOL isSuccessed = NO;
         [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:imageSize contentMode:PHImageContentModeAspectFit options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-            //只要最终结果的返回
-            if (result && info[@"PHImageFileURLKey"]) {
-                NSLog(@"==================>%p :%@   &&\n%@",self,result,info);
+//            只要最终结果的返回
+//            NSLog(@"==================> :%@   &&\n%@",result,info);
+            BOOL isDegraded = [info[PHImageResultIsDegradedKey] boolValue];
+            
+            if (result && isDegraded == NO && isSuccessed == NO) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if (success) {
                         success(result);
+                        isSuccessed = YES;
+//                        NSLog(@"最终结果%@",result);
                     }
                 });
             }

@@ -19,6 +19,7 @@
 		17B47A2E1D347E52008F83D8 /* ICEPhotoLibrary.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17B47A2B1D347E52008F83D8 /* ICEPhotoLibrary.podspec */; };
 		17B47A2F1D347E52008F83D8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 17B47A2C1D347E52008F83D8 /* LICENSE */; };
 		17B47A331D3481D8008F83D8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 17B47A311D347FB4008F83D8 /* README.md */; };
+		17FACEB41D55C0330043180E /* 屏幕快照 2016-08-06 14.50.04.png in Resources */ = {isa = PBXBuildFile; fileRef = 17FACEB31D55C0330043180E /* 屏幕快照 2016-08-06 14.50.04.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		17B47A2B1D347E52008F83D8 /* ICEPhotoLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ICEPhotoLibrary.podspec; path = ../ICEPhotoLibrary.podspec; sourceTree = "<group>"; };
 		17B47A2C1D347E52008F83D8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		17B47A311D347FB4008F83D8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		17FACEB31D55C0330043180E /* 屏幕快照 2016-08-06 14.50.04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照 2016-08-06 14.50.04.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				17B479F71D347E3D008F83D8 /* AppDelegate.h */,
+				17FACEB31D55C0330043180E /* 屏幕快照 2016-08-06 14.50.04.png */,
 				17B479F81D347E3D008F83D8 /* AppDelegate.m */,
 				17B479FA1D347E3D008F83D8 /* ViewController.h */,
 				17B479FB1D347E3D008F83D8 /* ViewController.m */,
@@ -268,6 +271,7 @@
 			files = (
 				17B47A041D347E3E008F83D8 /* LaunchScreen.storyboard in Resources */,
 				17B47A011D347E3E008F83D8 /* Assets.xcassets in Resources */,
+				17FACEB41D55C0330043180E /* 屏幕快照 2016-08-06 14.50.04.png in Resources */,
 				17B479FF1D347E3E008F83D8 /* Main.storyboard in Resources */,
 				17B47A2E1D347E52008F83D8 /* ICEPhotoLibrary.podspec in Resources */,
 				17B47A2F1D347E52008F83D8 /* LICENSE in Resources */,
@@ -525,6 +529,7 @@
 				17B47A201D347E3E008F83D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17B47A211D347E3E008F83D8 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +538,7 @@
 				17B47A231D347E3E008F83D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17B47A241D347E3E008F83D8 /* Build configuration list for PBXNativeTarget "ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +547,7 @@
 				17B47A261D347E3E008F83D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

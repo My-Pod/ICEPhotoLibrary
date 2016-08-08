@@ -18,6 +18,7 @@ it, simply add the following line to your Podfile:
     1.0.1 修改:
         * 因 iOS8 下 PHPhotoLibrary 取图片时会多次回调结果, 依次返回缩略图和高清图.  现判断条件仅取高清图结果
         * 修复当图片或者地址为空时 carsh
+        * 修改获取高清图的条件
 
 ```ruby
 pod "ICEPhotoLibrary"
